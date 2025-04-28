@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio de Matías Eduardo Torres Opazo</title>
+    <style>
+        /* Estilo general */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #121212; /* Fondo negro */
+            color: #e0e0e0; /* Texto claro */
+        }
+
+        /* Encabezado */
+        header {
+            background: linear-gradient(to right, #6a11cb, #1a66e7); /* Degradado atractivo */
+            color: #fff;
+            padding: 2.5rem 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra sutil */
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+            font-weight: bold;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+            color: #d1d1d1; /* Texto gris claro */
+        }
+
+        nav {
+            margin-top: 1.5rem;
+        }
+
+        nav a {
+            color: #ffdd57; /* Amarillo */
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #fff; /* Blanco al pasar el mouse */
+        }
+
+        /* Secciones */
+        section {
+            padding: 2rem;
+            max-width: 800px;
+            margin: 2rem auto;
+            background: #1e1e1e; /* Fondo oscuro para secciones */
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Sombra más pronunciada */
+        }
+
+        section h2 {
+            font-size: 2rem;
+            color: #7289da; /* Azul claro */
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #7289da;
+            padding-bottom: 0.5rem;
+        }
+
+        section p, section ul {
+            font-size: 1.1rem;
+            color: #bdbdbd; /* Texto gris claro */
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 2rem;
+        }
+
+        ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Formulario */
+        form label {
+            font-weight: bold;
+            margin-top: 1rem;
+            display: block;
+            color: #e0e0e0;
+        }
+
+        form input, form textarea, form button {
+            display: block;
+            width: 100%;
+            margin: 0.5rem 0;
+            padding: 0.8rem;
+            font-size: 1rem;
+            border: 1px solid #333;
+            border-radius: 5px;
+            background: #121212; /* Fondo oscuro */
+            color: #e0e0e0;
+        }
+
+        form input:focus, form textarea:focus {
+            border-color: #7289da;
+            outline: none;
+            box-shadow: 0 0 5px rgba(114, 137, 218, 0.5);
+        }
+
+        form button {
+            background: #7289da;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            font-size: 1.1rem;
+        }
+
+        form button:hover {
+            background: #5b6eae; /* Azul más oscuro */
+        }
+
+        /* Pie de página */
+        footer {
+            background: #1f1f1f;
+            color: #bdbdbd;
+            text-align: center;
+            padding: 1.5rem 0;
+            margin-top: 2rem;
+        }
+
+        footer p {
+            margin: 0.5rem 0;
+        }
+
+        footer a {
+            color: #7289da;
+            text-decoration: none;
+            margin: 0 0.5rem;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>¡Hola! Soy Matías Eduardo Torres Opazo</h1>
+        <p>Desarrollador apasionado por la tecnología y el aprendizaje continuo</p>
+        <nav>
+            <a href="#proyectos">Mis proyectos</a>
+            <a href="https://github.com/tuusuario" target="_blank">Mi GitHub</a>
+            <a href="#contacto">Contáctame</a>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Sobre mí</h2>
+        <p>Soy estudiante de programación y me encanta aprender nuevas tecnologías. Mi objetivo es crear soluciones innovadoras que impacten positivamente en la vida de las personas.</p>
+    </section>
+
+    <section>
+        <h2>Habilidades e intereses</h2>
+        <ul>
+            <li>Programación en Python</li>
+            <li>Desarrollo Web</li>
+            <li>Videojuegos</li>
+            <li>Diseño UX/UI</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Proyectos destacados</h2>
+        <h3>Calculadora en Python</h3>
+        <p>Una calculadora simple creada con Python y ejecutada en consola.</p>
+    </section>
+
+    <section id="contacto">
+        <h2>Contáctame</h2>
+        <form action="#" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Encuéntrame en:</p>
+        <a href="https://github.com/tuusuario" target="_blank">GitHub</a> |
+        <a href="https://linkedin.com/in/tuusuario" target="_blank">LinkedIn</a>
+        <p>&copy; 2025 Matías Eduardo Torres Opazo. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
